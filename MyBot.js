@@ -541,8 +541,8 @@ function createBot() {
   let fishCount = 0;
   let fishing = false;
   
-  bot.chatAddPattern(/<09Glimmer> startfishing|<09Shimmer> startfishing/i, 'startfishing');
-  bot.chatAddPattern(/<09Glimmer> stopfishing|<09Shimmer> stopfishing/i, 'stopfishing');
+  bot.chatAddPattern(/startfishing/i, 'startfishing');
+  bot.chatAddPattern(/stopfishing/i, 'stopfishing');
   
   bot.on('startfishing', () => {
     console.log('fishing start');
@@ -565,7 +565,7 @@ function createBot() {
   
   //统计
   bot.chatAddPattern(
-    /(<09Glimmer> 摸鱼进度|<09Shimmer> 摸鱼进度|<kahuhuan> 摸鱼进度)/,
+    /(摸鱼进度)/,
     'fishcount'
   )
   const fc = () =>{
