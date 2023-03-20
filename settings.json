@@ -1,0 +1,56 @@
+{
+  "bot-account": {
+    "username": "*",
+    "password": "*",
+    "type": "microsoft"
+  },
+
+  "server": {
+    "ip": "*",
+    "port": 25565,
+    "version": "1.19.3"
+  },
+
+  "position": {
+    "enabled": false,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "*"
+    },
+
+    "anti-afk": {
+      "enabled": false,
+      "sneak": false,
+      "jump": false,
+      "rotate": false,
+
+      "hit": {
+        "enabled": false,
+        "delay": 1000,
+        "attack-mobs": false
+      }
+    },
+
+    "chat-messages": {
+      "enabled": false,
+      "repeat": true,
+      "repeat-delay": 60,
+
+      "messages": [
+        "I'm a innocent ",
+        "My owner is 09Glimmer ",
+        "Do you want to play with me? "
+      ]
+    },
+
+    "chat-log": false,
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 5000
+  }
+}
